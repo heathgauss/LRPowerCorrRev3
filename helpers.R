@@ -27,8 +27,8 @@ LRPowerCorr <- function ( sampsize, nsims, p,
   Generate <- function(n){
     
     #Generate Binomial Variables
-    x1=rbinom(n,1,.5)
-    x2=rbinom(n,1,.5)
+    x1=rbinom(n,1,pcx1)
+    x2=rbinom(n,1,pcx2)
     
     #Normalize the binomial variables
     cx1= (x1 - pcx1)/sqrt((pcx1)*(1-pcx1))
